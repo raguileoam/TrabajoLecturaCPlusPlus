@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1532209557 source:c:\users\usuario\documents\netbeansprojects\trabajolecturacplusplus\tlectura\testsoftware.cpp
+	"TestSoftware.h"
+	"Software.h"
+	<iostream>
+
+1532375348 c:\users\usuario\documents\netbeansprojects\trabajolecturacplusplus\tlectura\testsoftware.h
+	"Software.h"
+	<iostream>
+
+1532209480 c:\users\usuario\documents\netbeansprojects\trabajolecturacplusplus\tlectura\software.h
+	"C:\Users\Usuario\Desktop\kjl\Desarrolador.h"
+	"C:\Users\Usuario\Desktop\kjl\Producto.h"
+	"C:\Users\Usuario\Desktop\kjl\Interface.h"
+	<string>
+	<iostream>
+
+1530560506 c:\users\usuario\desktop\kjl\desarrolador.h
+	<string>
+
+1530567804 c:\users\usuario\desktop\kjl\producto.h
+	<string>
+
+1532211529 c:\users\usuario\desktop\kjl\interface.h
+
