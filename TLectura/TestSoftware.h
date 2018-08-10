@@ -1,10 +1,12 @@
 #ifndef TESTSOFTWARE_H
 #define TESTSOFTWARE_H
-#include "Software.h"
 #include <iostream>
+#include <cstdlib>
 class TestSoftware {
+
+
 public:
-int main();
+	int main();
 };
 
 #endif

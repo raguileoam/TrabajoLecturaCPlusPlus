@@ -1,63 +1,43 @@
 #ifndef SOFTWARE_H
 #define SOFTWARE_H
-#include "C:\Users\Usuario\Desktop\kjl\Desarrolador.h"
-#include "C:\Users\Usuario\Desktop\kjl\Producto.h"
-#include "C:\Users\Usuario\Desktop\kjl\Interface.h"
+#include "Desarrollador.h"
+#include "Producto.h"
+#include "Interface.h"
 #include <string>
 #include <iostream>
-class Software: public Producto,Interface {
+class Software : public Producto, Interface {
 
-protected:
-	Desarrolador desarrolador[];
+protected: 
+	Desarrollador desarrollador[1];
 	std::string licencia;
 	std::string version;
 
 public:
 	Software();
 
-	Software(std::string nombre,int codigo,std::string licencia, std::string version){
-        this->nombre = nombre;
-        this->codigo = codigo;
-        this->licencia = licencia;
-        this->version = version;
-	};
-	std::string getNombre(){
-         return this->nombre;
-	};
+	Software(std::string nombre,int codigo,std::string licencia, std::string version);
 
-	void setNombre(std::string nombre){
-         this->nombre = nombre;
-	};
-    int getCodigo(){
-         return this->codigo;
-	};
+	std::string getLicencia();
 
-	void setCodigo(int codigo){
-         this->codigo = codigo;
-	};
+	void setLicencia(std::string licencia);
 
-	std::string getLicencia(){
-	 return this->licencia;
-	};
+	std::string getVersion();
 
-	void setLicencia(std::string licencia){
-        this->licencia = licencia;
-	};
+	void setVersion(std::string version);
 
-	std::string getVersion(){
-         return this->version;
-	};
+	void setCodigo(int codigo);
 
-	void setVersion(std::string version){
-         this->version = version;
-	};
+	int getCodigo();
 
+	void setNombre(std::string nombre);
 
-	void mostrar(){
-        std::cout << "Nombre: " << nombre <<"\t Codigo: "<<codigo<<"\t Licencia: "<< licencia<< "\t Version: "<<version<<std::endl;
-	};
-
-
+	std::string getNombre();
+        
+        void setDesarrollador(Desarrollador desarrollador,int num);
+        
+        Desarrollador getDesarrollador(int num);
+        
+        void mostrar();
 };
 
 #endif
